@@ -1,0 +1,107 @@
+Begin Object Class=/Script/Engine.Material Name="M_Laser"
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSine Name="MaterialExpressionSine_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_4"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0"
+      Input=(Expression=MaterialExpressionTextureCoordinate'"M_Laser:MaterialExpressionTextureCoordinate_0"')
+      G=True
+      MaterialExpressionEditorX=-848
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=33C9969D45A3709C31405AA923A82381
+      Material=Material'"M_Laser"'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0"
+      A=(Expression=MaterialExpressionComponentMask'"M_Laser:MaterialExpressionComponentMask_0"')
+      MaterialExpressionEditorX=-722
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=61130B304F48E699C4DA5AB3BA656339
+      Material=Material'"M_Laser"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionParticleColor'"M_Laser:MaterialExpressionParticleColor_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionPower'"M_Laser:MaterialExpressionPower_0"')
+      MaterialExpressionEditorX=-176
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=BF8D573D488CFDBF3BD75CA5FF1ED5E0
+      Material=Material'"M_Laser"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionParticleColor'"M_Laser:MaterialExpressionParticleColor_0"',OutputIndex=4,Mask=1,MaskA=1)
+      B=(Expression=MaterialExpressionPower'"M_Laser:MaterialExpressionPower_0"')
+      MaterialExpressionEditorX=-176
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=BF8D573D488CFDBF3BD75CA5FF1ED5E0
+      Material=Material'"M_Laser"'
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_0"
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=-48
+      MaterialExpressionGuid=76A6891542E8C656965AD9BABC5C5EEA
+      Material=Material'"M_Laser"'
+   End Object
+   Begin Object Name="MaterialExpressionPower_0"
+      Base=(Expression=MaterialExpressionSine'"M_Laser:MaterialExpressionSine_0"')
+      ConstExponent=3.000000
+      MaterialExpressionEditorX=-459
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=F419C5B740698D828F9925B37C911AA3
+      Material=Material'"M_Laser"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionSine_0"
+      Input=(Expression=MaterialExpressionDivide'"M_Laser:MaterialExpressionDivide_0"')
+      MaterialExpressionEditorX=-592
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=12F2FBA1484403611473B3BC490050DA
+      Material=Material'"M_Laser"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      MaterialExpressionEditorX=-992
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=F3C4C35C4DE87537EC5764A797E287E3
+      Material=Material'"M_Laser"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_4"
+   End Object
+   BaseColor=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(OutputIndex=-1)
+   Specular=(OutputIndex=-1)
+   Roughness=(Constant=0.423800)
+   EmissiveColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"')
+   Opacity=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"')
+   BlendMode=BLEND_Translucent
+   bUsedWithSkeletalMesh=True
+   bUsedWithParticleSprites=True
+   bUsedWithBeamTrails=True
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionParticleColor'"MaterialExpressionParticleColor_0"'
+   Expressions(1)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(2)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(3)=MaterialExpressionPower'"MaterialExpressionPower_0"'
+   Expressions(4)=MaterialExpressionSine'"MaterialExpressionSine_0"'
+   Expressions(5)=MaterialExpressionDivide'"MaterialExpressionDivide_0"'
+   Expressions(6)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_0"'
+   Expressions(7)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=0975CA5445FB2A6514A7B3A388530242
+   CachedExpressionData=(QualityLevelsUsed=(False,True,False))
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_4"'
+   ParameterOverviewExpansion=(("-12None", True))
+   LightingGuid=74A6612545CF43E71AA890A113255CC8
+End Object
